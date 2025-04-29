@@ -17,7 +17,7 @@ def generate_launch_description():
     # Files paths 
     default_param_file = os.path.join(pkg_share, 'config/nav2_params.yaml')
     default_rviz_config_file = os.path.join(pkg_share, 'rviz/config.rviz')
-    default_map = os.path.join(pkg_share, 'maps/six_points.yaml')
+    default_map = os.path.join(pkg_share, 'maps/six_waypoints.yaml')
     
 
     # Create Launch configuration variables 
