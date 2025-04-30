@@ -12,22 +12,25 @@ This ROS 2 launch file sets up the full Nav2 navigation stack along with optiona
 - Optionally launches RViz for visualization.
 - Can run either with SLAM or a pre-saved map.
 
+## 🧑‍💻 Setup
 
-## 🛠️ Build Instructions
-
-```bash
-cd ~/ros2_ws/src
-git clone https://github.com/manojm-dev/navigation_bringup.git
-cd ..
-colcon build --packages-select navigation_bringup
-source install/setup.bash
+1. 📂 Clone the repository
+```
+mkdir -p ~/ros_ws/src
+cd ~/ros_ws/src
+git clone  https://github.com/manojm-dev/navigation_bringup.git
 ```
 
-## 📦 Installing Dependencies
-
+2) 📦 Install dependencies
 ```
-cd ~/ros2_ws
+cd ~/ros_ws
 sudo apt-get update -y && rosdep update && rosdep install --from-paths src --ignore-src -y
+```
+
+3) 🛠️ Building the packages
+```
+cd ~/ros_ws
+colcon build
 ```
 
 ## 🧾 How to Launch
