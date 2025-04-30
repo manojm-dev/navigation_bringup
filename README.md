@@ -13,6 +13,23 @@ This ROS 2 launch file sets up the full Nav2 navigation stack along with optiona
 - Can run either with SLAM or a pre-saved map.
 
 
+## 🛠️ Build Instructions
+
+```bash
+cd ~/ros2_ws/src
+git clone https://github.com/manojm-dev/navigation_bringup.git
+cd ..
+colcon build --packages-select navigation_bringup
+source install/setup.bash
+```
+
+## 📦 Installing Dependencies
+
+```
+cd ~/ros2_ws
+sudo apt-get update -y && rosdep update && rosdep install --from-paths src --ignore-src -y
+```
+
 ## 🧾 How to Launch
 
 ```bash
